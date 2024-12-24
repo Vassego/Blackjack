@@ -63,22 +63,36 @@ The project utilizes **Flask** as the back-end framework and **SQLAlchemy** for 
 - A virtual environment tool like `venv` (optional but recommended).
 
 ### Steps
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Vassego/Blackjack.git
-   ```
 
-2. Run the application:
-   ```bash
-   python main.py
-   ```
+```bash
+# 1. Clone the repository
+git clone https://github.com/Vassego/Blackjack.git
 
-3. Open your browser and navigate to:
-   ```
-   http://127.0.0.1:7000
-   ```
+# 2. Navigate to the repository folder
+cd Blackjack
 
----
+# 3. (Optional) Create and activate a virtual environment
+# On macOS/Linux:
+python -m venv venv
+source venv/bin/activate
+
+# On Windows:
+python -m venv venv
+venv\Scripts\activate
+
+# 4. Install the required dependencies
+pip install -r requirements.txt
+
+# 5. Ensure your requirements.txt includes the following:
+# Flask==2.2.3
+# Flask-SQLAlchemy==2.5.1
+
+# 6. Run the application
+python main.py
+
+# 7. Open your browser and navigate to:
+http://127.0.0.1:7000
+```
 
 ## Usage
 
