@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    {% include 'navbar.html' %}
+
+    <div class="container">
+        <h2 class="title ">Leaderboard</h2>
+        <table class="game-container">
+            <thead>
+                <tr >
+                    <th>Username</th>
+                    <th >Total Wins</th>
+                    <th >Win Rate</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for entry in leaderboard %}
+                <tr >
+                    <td >{{ entry['username'] }}</td>
+                    <td >{{ entry['total_wins'] }}</td>
+                    <td >{{ entry['win_rate'] | round(2) }}%</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

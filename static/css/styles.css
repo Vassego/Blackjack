@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: #2f855a; 
+    font-family: 'sans-serif'; 
+    line-height: normal; 
+    letter-spacing: normal; 
+}
+.title {
+    font-family: "Rubik Bubbles", cursive;
+    font-weight: 400;
+    color: lime;
+    font-size: 50px;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+    margin-top: 50px;
+}
+.user-hand-title,
+.dealer-hand-title {
+    font-size: 1.25rem; 
+    font-size: 34px;
+    font-weight: bold;
+    color: lime; 
+    margin-bottom: 0.5rem; 
+}
+.user-hand-value,
+.dealer-hand-value {
+    font-size: 1rem; 
+    color: lime; 
+    margin-top: 0.5rem; 
+}
+
+
+.result-title {
+    font-size: 1.5rem; 
+    color: white; 
+    margin-top: 1rem; 
+}
+
+.button {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 0.75rem 1.5rem; 
+    border-radius: 0.5rem; 
+    font-size: 1rem; 
+    border: none;
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    border: 3px solid rgb(147, 227, 67);
+}
+.new-game-container {
+    display: flex;
+    justify-content: center; 
+    margin-top: 1rem; 
+}
+.new-game-button {
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    border-radius: 0.5rem; 
+    color: white;
+    background-color:  #eedc38; 
+    transition: background-color 0.3s;
+    cursor: pointer; 
+    border: none;
+}
+
+.button:hover {
+    background-color: #45a049; 
+}
+.new-game-button:hover {
+    background-color: #FBC02D; 
+}
+
+.img1 {
+    width: 500px;
+    height: 500px;
+}
+.game-container {
+    background-color: #34da8885;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+.rule-container {
+    background-color: #34da8885;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0.3rem;
+    margin-top: 1rem;
+}
+
+h3.value {
+    font-size: 1.25rem;
+    color: white;
+    margin-top: 1rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.space-x-2 > * + * {
+    margin-left: 0.5rem;
+}
+
+.space-x-4 > * + * {
+    margin-left: 1rem;
+}
+button {
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.play-button {
+    padding: 1rem 2rem;
+    width: 370px;
+    font-size: 1.5rem;
+    margin-top: 0.5em;
+    background-color: rgb(9, 244, 103);
+}
+
+.bg-blue {
+    background-color: #4299e1;
+}
+
+.bg-blue:hover {
+    background-color: #3182ce;
+}
+
+.bg-red {
+    background-color: #f56565;
+}
+
+.bg-red:hover {
+    background-color: #e53e3e;
+}
+
+.bg-yellow {
+    background-color: #ecc94b;
+}
+
+.bg-yellow:hover {
+    background-color: #d69e2e;
+}
+.playing-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 6rem;
+    height: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.logout-button {
+    background-color: #ecc94b;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #d69e2e;
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.7rem;
+    background-color: #150101b7; 
+    margin: 0; 
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #849409;
+    text-decoration: none;
+}
+
+.navbar-buttons {
+    display: flex;
+    align-items: center; 
+}
+
+.navbar-button {
+    font-size: 1rem;
+    color: #fff;
+    background-color: #333; 
+    border: none;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+    margin-left: 0.5rem; 
+}
+
+.navbar-button:hover {
+    background-color: #666; 
+}
+
+.navbar-button.logout-button {
+    background-color: #dc3545; 
+    color: #fff;
+}
+
+.navbar-button.logout-button:hover {
+    background-color: #c82333;
+}
+
+@media (max-width: 768px) {
+    .navbar-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-button {
+        margin-bottom: 0.5rem;
+    }
+}      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+table {
+    width: 100%; /* Full width of the container */
+    border-collapse: collapse; /* Remove spacing between borders */
+}
+
+th, td {
+    padding: 10px; /* Slightly smaller padding */
+    text-align: left; /* Align text to the left */
+    border-bottom: 1px solid #ddd; /* Bottom border for rows */
+}
+
+th {
+    background-color: #4CAF50; /* Header background color */
+    color: white; /* Header text color */
+}
+
+tr:hover {
+    background-color: #f5f5f5; /* Highlight row on hover */
+}

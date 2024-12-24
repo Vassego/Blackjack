@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="/">
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <title>Rules</title>
+</head>
+<body>
+
+    {% include 'navbar.html' %}
+    <div class="container " >
+        <div class="rule-container ">
+
+        <h2 class="title" >Game Rules</h2>
+        <div class="rules">
+            <h3>Objective of the Game</h3>
+            <p>The goal is to accumulate more points than the dealer without exceeding 21 points. Each round presents new challenges, requiring strategic decision-making!</p>
+
+            <h3>Game Setup</h3>
+            <ul>
+                <li>Each player receives two cards face up.</li>
+                <li>The dealer receives two cards: one face up, one face down.</li>
+                <li>The player with the highest total points begins the game.</li>
+            </ul>
+
+            <h3>Card Values</h3>
+            <ul>
+                <li><strong>Number Cards (2-10):</strong> Worth their face value.</li>
+                <li><strong>Face Cards (Jack, Queen, King):</strong> Worth 10 points.</li>
+                <li><strong>Aces:</strong> Worth either 1 or 11 points, depending on the player's hand.</li>
+            </ul>
+
+            <h3>Gameplay Mechanics</h3>
+            <p>During your turn:</p>
+            <ul>
+                <li><strong>Hit:</strong> Draw a card to increase your total points.</li>
+                <li><strong>Stand:</strong> Keep your current hand and end your turn.</li>
+            </ul>
+            <p>If your total exceeds 21 points, you bust and lose the round.</p>
+
+            <h3>Dealer's Turn</h3>
+            <ul>
+                <li>The dealer reveals their face-down card.</li>
+                <li>The dealer must hit until they have at least 17 points.</li>
+                <li>If the dealer busts, all remaining players win the round.</li>
+            </ul>
+
+            <h3>Winning the Round</h3>
+            <ul>
+                <li>If your points are higher than the dealer's without busting, you win.</li>
+                <li>If the dealer busts, all players still in the game win.</li>
+                <li>If both you and the dealer have the same total, it's a push, and your bet is returned.</li>
+            </ul>
+
+            <h3>Scoring</h3>
+            <p>Points are awarded for each round won. Keep track of your total score to determine the overall winner at the end of the game.</p>
+
+            <h3>Tips for Success</h3>
+            <ul>
+                <li>Consider the dealer's face-up card when deciding to hit or stand.</li>
+                <li>Know when to take risks and when to play it safe.</li>
+                <li>Practice to improve your skills and strategy.</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="/">
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <title>Blackjack</title>
+</head>
+<body >
+    {% include 'navbar.html' %}
+    <div class="container">
+            <div class="game-container">
+                <div class="flex justify-around">
+                    <div >
+                        <h3 class="user-hand-title">Your Hand</h3>
+                        <div class="flex space-x-2">
+                            {% for card in game_state.user_hand %}
+                                <div class="playing-card">
+                                    <span class="card-value">{{ card }}</span>
+                                </div>
+                            {% endfor %}
+                        </div>
+                        <h3 class="user-hand-value">Value: {{ game_state.user_value }}</h3>
+                    </div>
+                    <div >
+                        <h3 class="dealer-hand-title">Dealer's Hand</h3>
+                        <div class="flex space-x-2">
+                            {% for card in game_state.dealer_hand %}
+                                <div class="playing-card">
+                                    <span class="card-value">{{ card }}</span>
+                                </div>
+                            {% endfor %}
+                        </div>
+                        <h3 class="dealer-hand-value">Value: {{ game_state.dealer_value }}</h3>
+                    </div>
+                </div>
+                <div class="flex justify-center space-x-4 mb-8">
+                    <form action="/hit" method="get">
+                        <button type="submit" class="button hit-button">Hit</button>
+                    </form>
+                    <form action="/stand" method="get">
+                        <button type="submit" class="button stand-button">Stand</button>
+                    </form>
+                </div>
+                {% if game_state.result %}
+                <div>
+                    <h3 class="result-title"  style="text-align:center">{{ game_state.result }} </h3>
+                    <form action="/new_game" method="get" class="new-game-container">
+                        <button type="submit" class=" new-game-button">New Game</button>
+                    </form>
+                </div>
+                {% endif %}
+            </div>
+       
+    </div>
+
+</body>
+
+
+
+</html>

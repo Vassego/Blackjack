@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="/">
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <title>Score</title>
+</head>
+<body >
+    {% include 'navbar.html' %}
+    <div class="container game-container">
+        <h2 class="title">Your Score</h2>
+        <div class="score-details">
+            <h3>Total Matches played: {{ stats.total_matches }}</h3>
+            <h3>Total Wins achieved: {{ stats.total_wins }}</h3>
+            <h3>Win Rate: {{ (stats.win_rate) |round(3) }}%</h3>
+        </div>
+    </div>
+</body>
+</html>

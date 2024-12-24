@@ -1,0 +1,88 @@
+body {
+    background-color: #2f855a; 
+    font-family: 'sans-seriff', cursive; 
+}
+
+.title {
+    font-size: 50px;
+    color: lime;
+    text-align: center;
+}
+
+.container {
+    margin: auto;
+}
+
+.form-container {
+    background-color: #3f9c66; 
+    border-radius: 0.5rem; 
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    padding: 2rem; 
+    width: 300px; 
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    color: white;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    width: 100%; 
+    padding: 0.5rem; 
+    border-radius: 0.25rem; 
+    border: 1px solid #ccc;
+}
+
+.button {
+    background-color: #ecc94b; 
+    color: white; 
+    padding: 0.75rem; 
+    border-radius: 0.25rem; 
+    cursor: pointer; 
+    font-weight: bold;
+    width: 319px;
+    border: none;
+    transition: background-color 0.3s; 
+    margin-top: 0.7rem;
+}
+
+.button:hover {
+    background-color: #d69e2e; 
+}
+
+.redirect-text {
+    margin-top: 1rem;
+    color: white;
+}
+
+.redirect-text a {
+    color: #ecc94b; 
+    text-decoration: underline; 
+}
+
+.flash-messages {
+    margin: auto 50rem;
+    padding: 0;
+}
+
+.flash-message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    width: 400px;
+}
+.flash-message.error {
+    background-color: #f8d7da;
+    color: #721c24; 
+}
+.flash-message.success {
+    background-color: #d4edda; 
+    color: #155724;
+}
