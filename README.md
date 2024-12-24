@@ -65,8 +65,7 @@ The project utilizes **Flask** as the back-end framework and **SQLAlchemy** for 
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Vassego/blackjack-game.git
-   cd blackjack-game
+   git clone https://github.com/Vassego/Blackjack.git
    ```
 
 2. Run the application:
