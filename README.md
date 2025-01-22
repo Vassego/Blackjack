@@ -96,7 +96,7 @@ http://127.0.0.1:7000
 
 ---
 
-## Acknowledgments
+## Acknowledgements
 - Flask Documentation: [https://flask.palletsprojects.com/](https://flask.palletsprojects.com/)
 - SQLAlchemy Documentation: [https://docs.sqlalchemy.org/](https://docs.sqlalchemy.org/)
 - Bootstrap: [https://getbootstrap.com/](https://getbootstrap.com/)
